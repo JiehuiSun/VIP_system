@@ -70,3 +70,13 @@ Mysql版本: 5.7.22
 
 具体讲解请查看文件: ```application.py```
 
+十、数据库管理
+---
+> 使用alembic进行数据库的管理
+> 1. pip install alembic 进行安装
+> 2. 在项目目录下执行 ```alembic init migrations```，此时项目目录会生成alembic.ini文件，在里面配置自己的mysql：sqlalchemy.url
+> 3. 修改```migrations/env.py```文件内容：target_metadata
+> 4. 将项目根目录写入环境变量PYTHONPATH: ```export PYTHONPATH=$PYTHONPATH:你的项目目录路径
+> 5. 此时执行：```alembic revision --autogenerate -m "create user table"```，这样就会在migrations/versions中生成数据库迁移文件
+> 6. 执行：```alembic upgrade head```，就会在你的数据库中生成user表
+> 注意：请先在你的mysql中创建相应的数据库

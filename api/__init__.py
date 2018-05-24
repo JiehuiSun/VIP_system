@@ -6,8 +6,8 @@
 from flask import request
 from flask import jsonify
 from flask import current_app
-from trace import errors
-from trace import session
+from easy_flask import errors
+from easy_flask import session
 
 
 class Api(object):

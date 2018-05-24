@@ -4,7 +4,7 @@ from flask import request
 from api import Api
 from api import errors
 from . import controllers as account_ctl
-from trace import session
+from easy_flask import session
 
 
 class Login(Api):

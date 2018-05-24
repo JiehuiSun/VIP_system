@@ -2,8 +2,6 @@
 from flask import Blueprint
 
 from .views import Login
-from .views import Logout
-from .views import Logup
 
 account_router = Blueprint('account', __name__, url_prefix='/account')
 
