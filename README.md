@@ -11,20 +11,20 @@ Mysql版本: 5.7.22
 ---
 > 每个项目中都有自己的错误定义及处理，并且是属于基础功能，因此先了解错误类型定义
 
-具体讲解请查看文件: easy_flask/errors.py
+具体讲解请查看文件: ```easy_flask/errors.py```
 
 二、Session处理
 ---
 > 和移动端交互一般都采用token来进行认证，web也可以这样操作
 > 这里自己定义Session的存储，将token存入redis
 
-具体讲解请查看文件: utils/session.py
+具体讲解请查看文件:```utils/session.py```
 
 三、Redis使用
 ---
 > 项目中很多使用缓存的地方，因此需要使用redis
 
-具体讲解请查看文件: utils/flask_redis.py
+具体讲解请查看文件: ```utils/flask_redis.py```
 
 四、Flask配置
 ---
@@ -33,14 +33,14 @@ Mysql版本: 5.7.22
 > 2. 可以使用系统环境变量来赋值
 > 3. 使用import文件覆盖当前配置，也就是这里使用的方法
 
-具体讲解请查看文件: easy_flask/configs.py
+具体讲解请查看文件: ```easy_flask/configs.py```
 
 五、工具功能
 ---
 > 项目中有很多工具功能需要编写，所以统一都写在utils下，这里先写一个时间转换功能
 > 几乎所有项目都会有时间转换的需求
 
-具体讲解请查看文件: utils/time_utils.py
+具体讲解请查看文件: ```utils/time_utils.py```
 
 六、业务功能模块
 ---
@@ -53,4 +53,4 @@ Mysql版本: 5.7.22
 ---
 > 定义接口基础类，所以其它接口实现都需要继承此类，统一进行认证、异常、返回数据等操作
 
-具体讲解请查看文件api/__init__.py
+具体讲解请查看文件```api/__init__.py```
