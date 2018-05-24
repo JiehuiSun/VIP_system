@@ -13,11 +13,31 @@ class BaseError(Exception):
             self.errmsg = errmsg
 
 
-class MethodError(BaseError):
-    errno = 10001
+class MethodError(ApiError):
+    errno = 10002
     errmsg = '不支持的请求方式'
 
 
-class LoginError(BaseError):
+class InvalidArgsError(ApiError):
+    errno = 10003
+    errmsg = '无效的参数'
+
+
+class LoginError(ApiError):
     errno = 11001
     errmsg = '用户名或密码错误'
+
+
+class LogoutError(ApiError):
+    errno = 11002
+    errmsg = '用户名或密码错误'
+
+
+class LoginExpiredError(ApiError):
+    errno = 11003
+    errmsg = '登录状态已过期，请重新登录'
+
+
+class NoTokenError(ApiError):
+    errno = 11004
+    errmsg = '请求header中缺少token'
