@@ -80,3 +80,10 @@ Mysql版本: 5.7.22
 > 5. 此时执行：```alembic revision --autogenerate -m "create user table"```，这样就会在migrations/versions中生成数据库迁移文件
 > 6. 执行：```alembic upgrade head```，就会在你的数据库中生成user表
 > 注意：请先在你的mysql中创建相应的数据库
+
+十一、通过flask_script运行服务
+---
+> 目前基本的功能可以使用了，那么就需要运行起来服务进行测试
+> 使用flask_script来完成
+
+具体讲解请查看文件: ```manage.py```
