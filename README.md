@@ -19,3 +19,9 @@ Mysql版本: 5.7.22
 > 这里自己定义Session的存储，将token存入redis
 
 具体讲解请查看文件: utils/session.py
+
+三、Redis使用
+---
+> 项目中很多使用缓存的地方，因此需要使用redis
+
+具体讲解请查看文件: utils/flask_redis.py
