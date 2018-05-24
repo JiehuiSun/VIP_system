@@ -41,3 +41,10 @@ Mysql版本: 5.7.22
 > 几乎所有项目都会有时间转换的需求
 
 具体讲解请查看文件: utils/time_utils.py
+
+六、业务功能模块
+---
+> 根据项目的实际情况来划分不同业务模块，以独立的目录形式存在
+> 目录下分models.py、urls.py、views.py、controllers.py
+> 比如用户模块独立创建一个目录account
+> 在account/models.py中增加User类
