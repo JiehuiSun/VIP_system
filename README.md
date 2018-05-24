@@ -48,3 +48,9 @@ Mysql版本: 5.7.22
 > 目录下分models.py、urls.py、views.py、controllers.py
 > 比如用户模块独立创建一个目录account
 > 在account/models.py中增加User类
+
+七、基础接口类定义
+---
+> 定义接口基础类，所以其它接口实现都需要继承此类，统一进行认证、异常、返回数据等操作
+
+具体讲解请查看文件api/__init__.py
