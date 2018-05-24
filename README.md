@@ -63,3 +63,10 @@ Mysql版本: 5.7.22
 ```account/controllers.py```
 ```account/views.py```
 ```account/urls.py```
+
+九、应用实例
+---
+> 配置启用的app实例，其实日志文件放在项目根目录下的var/log下，此目录会自动创建
+
+具体讲解请查看文件: ```application.py```
+
