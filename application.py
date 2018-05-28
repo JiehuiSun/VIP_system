@@ -36,6 +36,7 @@ def config_logger(app):
         os.makedirs(log_dir)
     config_dict = {
         'filename': log_dir + log_filename,
+        'format': '%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
     }
     logging.basicConfig(**config_dict)
 
