@@ -6,8 +6,8 @@
 from flask import request
 from flask import jsonify
 from flask import current_app
-from easy_flask import errors
-from easy_flask import session
+from vip_system import errors
+from vip_system import session
 
 
 class Api(object):
