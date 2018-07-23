@@ -12,7 +12,7 @@ class DefaultConfig(object):
 
     DEBUG = True
     SECRET_KEY = '4e4y>;8i~O=+d8?8!1DTB)Vs9VJiX$<<Dt@~]R_,@Q;tIqk?csY(+YT;V)dU~j=.'
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root@localhost/trace?charset=utf8mb4'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://dbu:dddd@localhost/vip_system?charset=utf8mb4'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     REDIS_URI = 'redis://:@localhost:6379/3'
 
