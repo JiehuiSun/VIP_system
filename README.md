@@ -1,5 +1,5 @@
-# easy_flask
-用flask搭建最小可用框架，可以在此基础上进行开发
+# VIP_system
+制作会员系统
 
 操作系统：Ubuntu 16.04 server 64bit  
 python版本: 3.6.5  
@@ -11,7 +11,7 @@ Mysql版本: 5.7.22
 ---
 > 每个项目中都有自己的错误定义及处理，并且是属于基础功能，因此先了解错误类型定义
 
-具体讲解请查看文件: ```easy_flask/errors.py```
+具体讲解请查看文件: ```vip_system/errors.py```
 
 二、Session处理
 ---
@@ -33,7 +33,7 @@ Mysql版本: 5.7.22
 > 2. 可以使用系统环境变量来赋值
 > 3. 使用import文件覆盖当前配置，也就是这里使用的方法
 
-具体讲解请查看文件: ```easy_flask/configs.py```
+具体讲解请查看文件: ```vip_system/configs.py```
 
 五、工具功能
 ---
