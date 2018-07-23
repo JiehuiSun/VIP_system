@@ -4,7 +4,7 @@ from flask import request
 from api import Api
 from api import errors
 from . import controllers as account_ctl
-from easy_flask import session
+from vip_system import session
 
 
 class Login(Api):
@@ -15,8 +15,8 @@ class Login(Api):
 
     def post(self):
         data = request.get_json()
-        username = data.get('username')
-        password = data.get('password')
+        username = str(data.get('username'))
+        password = str(data.get('password'))
         if not (username and password):
             raise errors.InvalidArgsError('请填写用户名和密码')
         user = account_ctl.login(username, password)
