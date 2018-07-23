@@ -1,7 +1,7 @@
 # 根据需求定义不同model
 # username/email/phone没有做数据库级的唯一约束
 # 因此需要在程序中进行限制, 为了解决用户删除后，再创建同样的用户问题
-from easy_flask import db
+from vip_system import db
 from utils import time_utils
 
 

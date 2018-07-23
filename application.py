@@ -4,14 +4,14 @@ from flask import Flask
 from flask import Blueprint
 from flask_sqlalchemy import SQLAlchemy
 
-from easy_flask import configs
+from vip_system import configs
 from account import account_router
-from easy_flask import db
-from easy_flask import redis
-from easy_flask import session
+from vip_system import db
+from vip_system import redis
+from vip_system import session
 
 
-APP_NAME = 'easy_flask'
+APP_NAME = 'vip_system'
 
 
 def create_app():
