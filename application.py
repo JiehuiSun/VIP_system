@@ -1,11 +1,9 @@
 import os
 import logging
 from flask import Flask
-from flask import Blueprint
-from flask_sqlalchemy import SQLAlchemy
 
 from vip_system import configs
-from account import account_router
+from account import instance
 from vip_system import db
 from vip_system import redis
 from vip_system import session
@@ -18,7 +16,7 @@ def create_app():
     app = Flask(APP_NAME)
     app.config.from_object(configs.DefaultConfig)
     config_blueprint(app)
-    config_logger(app)
+    # config_logger(app)
     config_db(app)
     config_redis(app)
     config_session(app)
@@ -26,7 +24,7 @@ def create_app():
 
 
 def config_blueprint(app):
-    app.register_blueprint(account_router, url_prefix='/api/v1')
+    app.register_blueprint(instance, url_prefix='/api/v1')
 
 
 def config_logger(app):
