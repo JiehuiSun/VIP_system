@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# mail: sunjiehui@chengantech.com
+# mail: sunjiehuimail@foxmail.com
 # author: huihui
 # -*- coding: utf-8 -*-
 
